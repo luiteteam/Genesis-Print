@@ -18,7 +18,7 @@ const Navbar = () => {
   }, []);
 
   const navItems = [
-    { name: 'About', href: '/#about', isHash: true },
+    { name: 'About', href: '/about', isHash: false },
     { name: 'Services', href: '/#services', isHash: true },
     { name: 'Products', href: '/products', isHash: false },
     { name: 'Contact', href: '/contact', isHash: false },

@@ -1,4 +1,3 @@
-
 import { motion } from 'framer-motion';
 import { Phone, Mail, MapPin } from 'lucide-react';
 
@@ -10,7 +9,7 @@ const Footer = () => {
       <div className="container">
         <div className="py-12">
           <motion.div
-            className="text-center space-y-6"
+            className="text-center space-y-8 max-w-2xl mx-auto"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -29,26 +28,22 @@ const Footer = () => {
 
             {/* Address */}
             <motion.div
-              className="flex items-start justify-center space-x-3 max-w-md mx-auto"
+              className="flex items-start justify-center gap-3 text-neutral-300 text-sm sm:text-base"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
               viewport={{ once: true }}
             >
               <MapPin className="w-5 h-5 text-neutral-400 mt-1 flex-shrink-0" />
-              <div className="text-center">
-                <p className="leading-relaxed">
-                  348 Express Highway (VIP Road), Opp. Doordarshan Colony,
-                </p>
-                <p className="leading-relaxed">
-                  Near Six Mile, Barbari, Guwahati-781036
-                </p>
+              <div className="leading-relaxed text-left">
+                <p>348 Express Highway (VIP Road), Opp. Doordarshan Colony,</p>
+                <p>Near Six Mile, Barbari, Guwahati - 781036</p>
               </div>
             </motion.div>
 
             {/* Contact Info */}
             <motion.div
-              className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-8"
+              className="flex flex-col sm:flex-row items-center justify-center gap-4 text-sm sm:text-base"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
@@ -56,22 +51,22 @@ const Footer = () => {
             >
               <motion.a
                 href="tel:+918471916297"
-                className="flex items-center space-x-2 hover:text-white transition-colors duration-200"
+                className="flex items-center gap-2 hover:text-white transition-colors duration-200"
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.2 }}
               >
                 <Phone className="w-4 h-4" />
-                <span>8471916297</span>
+                8471916297
               </motion.a>
 
               <motion.a
                 href="mailto:genesispress@gmail.com"
-                className="flex items-center space-x-2 hover:text-white transition-colors duration-200"
+                className="flex items-center gap-2 hover:text-white transition-colors duration-200"
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.2 }}
               >
                 <Mail className="w-4 h-4" />
-                <span>genesispress@gmail.com</span>
+                genesispress@gmail.com
               </motion.a>
             </motion.div>
 
