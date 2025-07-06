@@ -1,4 +1,4 @@
-import  { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
@@ -50,19 +50,17 @@ const Navbar = () => {
       <div className="container">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-        <motion.div
-  className="flex items-center space-x-2"
-  whileHover={{ scale: 1.05 }}
-  transition={{ duration: 0.2 }}
->
-  <Link to="/" className="flex items-center space-x-2">
-    <div className="rounded-lg overflow-hidden bg-white flex items-center justify-center">
-      <img src="/logo.png" alt="Genesis Logo" className="h-[60px] w-auto object-contain" />
-    </div>
-  </Link>
-</motion.div>
-
-
+          <motion.div
+            className="flex items-center space-x-2"
+            whileHover={{ scale: 1.05 }}
+            transition={{ duration: 0.2 }}
+          >
+            <Link to="/" className="flex items-center space-x-2">
+              <div className="rounded-lg overflow-hidden bg-white flex items-center justify-center">
+                <img src="/logo.png" alt="Genesis Logo" className="h-[60px] w-auto object-contain" />
+              </div>
+            </Link>
+          </motion.div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">

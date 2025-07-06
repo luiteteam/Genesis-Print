@@ -78,7 +78,7 @@ const WhyChooseUs = () => {
           viewport={{ once: true }}
         >
           <h2 className="heading-lg text-neutral-900 mb-4">
-            Why Choose <span className="text-gradient">PrintPro</span>?
+            Why Choose <span className="text-gradient">Genesis</span>?
           </h2>
           <p className="body-lg text-neutral-600 max-w-2xl mx-auto">
             We're committed to delivering exceptional printing services that exceed your expectations. 
