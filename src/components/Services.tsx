@@ -45,79 +45,80 @@ const Services = () => {
   }, []);
 
   const services = [
-    {
-      icon: CreditCard,
-      title: 'Business Cards',
-      description: 'Professional business cards that make a lasting impression with premium materials and finishes.',
-      features: ['Premium cardstock', 'UV coating', 'Foil stamping', 'Custom die-cutting'],
-      price: 'Starting at $25',
-      color: 'bg-blue-50 border-blue-200 hover:bg-blue-100'
-    },
-    {
-      icon: FileText,
-      title: 'Brochures & Flyers',
-      description: 'Eye-catching marketing materials designed to showcase your products and services effectively.',
-      features: ['Full-color printing', 'Various sizes', 'Folding options', 'Glossy or matte finish'],
-      price: 'Starting at $35',
-      color: 'bg-green-50 border-green-200 hover:bg-green-100'
-    },
-    {
-      icon: Newspaper,
-      title: 'Catalogs & Magazines',
-      description: 'Professional publications with perfect binding and high-quality paper for lasting impact.',
-      features: ['Perfect binding', 'Full-color pages', 'Custom covers', 'Various page counts'],
-      price: 'Starting at $150',
-      color: 'bg-purple-50 border-purple-200 hover:bg-purple-100'
-    },
-    {
-      icon: ImageIcon,
-      title: 'Posters & Banners',
-      description: 'Large format printing for events, promotions, and advertising with vibrant colors.',
-      features: ['Up to 64" wide', 'Weather resistant', 'Grommets included', 'Indoor/outdoor options'],
-      price: 'Starting at $45',
-      color: 'bg-orange-50 border-orange-200 hover:bg-orange-100'
-    },
-    {
-      icon: Bookmark,
-      title: 'Stickers & Labels',
-      description: 'Custom stickers and labels for branding, packaging, and promotional purposes.',
-      features: ['Waterproof options', 'Custom shapes', 'Vinyl material', 'Permanent adhesive'],
-      price: 'Starting at $20',
-      color: 'bg-pink-50 border-pink-200 hover:bg-pink-100'
-    },
-    {
-      icon: Calendar,
-      title: 'Calendars',
-      description: 'Custom calendars for promotional gifts or personal use with your photos and branding.',
-      features: ['Wall calendars', 'Desk calendars', 'Custom photos', 'Spiral or saddle binding'],
-      price: 'Starting at $75',
-      color: 'bg-indigo-50 border-indigo-200 hover:bg-indigo-100'
-    },
-    {
-      icon: MapPin,
-      title: 'Signs & Graphics',
-      description: 'Indoor and outdoor signage solutions for businesses, events, and wayfinding.',
-      features: ['Corrugated plastic', 'Metal signs', 'Yard signs', 'Window decals'],
-      price: 'Starting at $55',
-      color: 'bg-teal-50 border-teal-200 hover:bg-teal-100'
-    },
-    {
-      icon: Package,
-      title: 'Packaging',
-      description: 'Custom packaging solutions including boxes, bags, and promotional materials.',
-      features: ['Custom boxes', 'Shopping bags', 'Tissue paper', 'Branded packaging'],
-      price: 'Starting at $65',
-      color: 'bg-cyan-50 border-cyan-200 hover:bg-cyan-100'
-    },
-    {
-      icon: Shirt,
-      title: 'Apparel Printing',
-      description: 'Custom t-shirts, hoodies, and promotional apparel with screen printing and embroidery.',
-      features: ['Screen printing', 'Embroidery', 'Heat transfer', 'Bulk discounts'],
-      price: 'Starting at $15',
-      color: 'bg-yellow-50 border-yellow-200 hover:bg-yellow-100'
-    }
-  ];
+  {
+    icon: CreditCard,
+    title: 'Business Cards',
+    description: 'Professional business cards that make a lasting impression with premium materials and finishes.',
+    features: ['Premium cardstock', 'UV coating', 'Foil stamping', 'Custom die-cutting'],
+    price: 'Starting at ₹199',
+    color: 'bg-blue-50 border-blue-200 hover:bg-blue-100'
+  },
+  {
+    icon: FileText,
+    title: 'Brochures & Flyers',
+    description: 'Eye-catching marketing materials designed to showcase your products and services effectively.',
+    features: ['Full-color printing', 'Various sizes', 'Folding options', 'Glossy or matte finish'],
+    price: 'Starting at ₹299',
+    color: 'bg-green-50 border-green-200 hover:bg-green-100'
+  },
+  {
+    icon: Newspaper,
+    title: 'Catalogs & Magazines',
+    description: 'Professional publications with perfect binding and high-quality paper for lasting impact.',
+    features: ['Perfect binding', 'Full-color pages', 'Custom covers', 'Various page counts'],
+    price: 'Starting at ₹1200',
+    color: 'bg-purple-50 border-purple-200 hover:bg-purple-100'
+  },
+  {
+    icon: ImageIcon,
+    title: 'Posters & Banners',
+    description: 'Large format printing for events, promotions, and advertising with vibrant colors.',
+    features: ['Up to 64" wide', 'Weather resistant', 'Grommets included', 'Indoor/outdoor options'],
+    price: 'Starting at ₹399',
+    color: 'bg-orange-50 border-orange-200 hover:bg-orange-100'
+  },
+  {
+    icon: Bookmark,
+    title: 'Stickers & Labels',
+    description: 'Custom stickers and labels for branding, packaging, and promotional purposes.',
+    features: ['Waterproof options', 'Custom shapes', 'Vinyl material', 'Permanent adhesive'],
+    price: 'Starting at ₹149',
+    color: 'bg-pink-50 border-pink-200 hover:bg-pink-100'
+  },
+  {
+    icon: Calendar,
+    title: 'Calendars',
+    description: 'Custom calendars for promotional gifts or personal use with your photos and branding.',
+    features: ['Wall calendars', 'Desk calendars', 'Custom photos', 'Spiral or saddle binding'],
+    price: 'Starting at ₹599',
+    color: 'bg-indigo-50 border-indigo-200 hover:bg-indigo-100'
+  },
+  {
+    icon: MapPin,
+    title: 'Signs & Graphics',
+    description: 'Indoor and outdoor signage solutions for businesses, events, and wayfinding.',
+    features: ['Corrugated plastic', 'Metal signs', 'Yard signs', 'Window decals'],
+    price: 'Starting at ₹499',
+    color: 'bg-teal-50 border-teal-200 hover:bg-teal-100'
+  },
+  {
+    icon: Package,
+    title: 'Packaging',
+    description: 'Custom packaging solutions including boxes, bags, and promotional materials.',
+    features: ['Custom boxes', 'Shopping bags', 'Tissue paper', 'Branded packaging'],
+    price: 'Starting at ₹799',
+    color: 'bg-cyan-50 border-cyan-200 hover:bg-cyan-100'
+  },
+  {
+    icon: Shirt,
+    title: 'Apparel Printing',
+    description: 'Custom t-shirts, hoodies, and promotional apparel with screen printing and embroidery.',
+    features: ['Screen printing', 'Embroidery', 'Heat transfer', 'Bulk discounts'],
+    price: 'Starting at ₹249',
+    color: 'bg-yellow-50 border-yellow-200 hover:bg-yellow-100'
+  }
+];
+
 
   return (
     <section ref={sectionRef} id="services" className="section-padding bg-white">
