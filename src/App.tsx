@@ -1,14 +1,15 @@
-
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Products from './components/Products';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
-    <Router >
+    <Router>
+      <ScrollToTop />
       <div className="min-h-screen">
         <Navbar />
         <Routes>
