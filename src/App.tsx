@@ -8,9 +8,17 @@ import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  const handleLoadingComplete = () => {
+    setIsLoading(false);
+  };
+
+function App() {
   return (
     <Router >
-      <ScollToTop />
+      <ScrollToTop />
+      {isLoading && <LoadingScreen onLoadingComplete={handleLoadingComplete} />}
       <div className="min-h-screen">
         <Navbar />
         <Routes>
