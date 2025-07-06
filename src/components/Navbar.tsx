@@ -21,7 +21,7 @@ const Navbar = () => {
     { name: 'About', href: '/about', isHash: false },
     { name: 'Services', href: '/#services', isHash: true },
     { name: 'Products', href: '/products', isHash: false },
-    { name: 'Contact', href: '/contact', isHash: false },
+    // { name: 'Contact', href: '/contact', isHash: false },
   ];
 
   const handleNavClick = (href: string, isHash: boolean) => {
@@ -106,7 +106,7 @@ const Navbar = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              Get Quote
+             Contact
             </motion.a>
           </div>
 

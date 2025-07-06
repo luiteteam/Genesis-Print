@@ -35,7 +35,7 @@ const FinalCTA = () => {
             viewport={{ once: true, margin: "-100px" }}
           >
             <motion.a
-              href="#contact"
+              href="/contact"
               className="inline-flex items-center justify-center px-6 py-3 sm:px-8 sm:py-3.5 bg-white text-primary-600 rounded-lg font-semibold hover:bg-neutral-100 transition-all shadow-lg hover:shadow-xl text-base sm:text-lg w-full sm:w-auto"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
