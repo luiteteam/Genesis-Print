@@ -5,10 +5,12 @@ import Home from './components/Home';
 import Products from './components/Products';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <Router >
+      <ScollToTop />
       <div className="min-h-screen">
         <Navbar />
         <Routes>
