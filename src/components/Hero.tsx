@@ -51,8 +51,8 @@ const Hero = () => {
 
   const stats = [
     { icon: Star, value: '5.0', label: 'Rating' },
-    { icon: Users, value: '2000+', label: 'Happy Clients' },
-    { icon: Award, value: '10+', label: 'Years Experience' },
+    { icon: Users, value: '1L+', label: 'Happy Clients' },
+    { icon: Award, value: '27+', label: 'Years Experience' },
   ];
 
   return (
