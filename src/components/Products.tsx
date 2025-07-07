@@ -35,7 +35,8 @@ const Products = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} id="products" className="section-padding pt-12 pb-6 bg-neutral-50">
+    <section ref={sectionRef} id="products" className="section-padding pt-[120px] pb-6 bg-neutral-50">
+
       <div className="container">
         {/* Header */}
         <motion.div
@@ -61,7 +62,7 @@ const Products = () => {
 
         {/* Stats */}
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 max-w-3xl mx-auto"
+            className="flex flex-wrap justify-center gap-8 mb-12 max-w-4xl mx-auto"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
