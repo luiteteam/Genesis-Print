@@ -12,12 +12,16 @@ import PrePress from './components/PrePress';
 import Press from './components/Press';
 import PostPress from './components/PostPress';
 import { HelmetProvider } from 'react-helmet-async';
+import { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+import BrandLoader from './components/BrandLoader';
 
 function App() {
   return (
     <HelmetProvider>
       <Router>
         <ScrollToTop />
+        <LoaderWrapper />
         <div className="min-h-screen">
           <Navbar />
           <Routes>
@@ -36,6 +40,18 @@ function App() {
       </Router>
     </HelmetProvider>
   );
+}
+
+function LoaderWrapper() {
+  const location = useLocation();
+  const [showLoader, setShowLoader] = useState(location.pathname === '/');
+
+  useEffect(() => {
+    setShowLoader(location.pathname === '/');
+  }, [location.pathname]);
+
+  if (!showLoader) return null;
+  return <BrandLoader onFinish={() => setShowLoader(false)} />;
 }
 
 export default App;
