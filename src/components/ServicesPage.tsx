@@ -83,7 +83,7 @@ const ServicesPage = () => {
   ];
 
   return (
-    <section ref={sectionRef} className="pt-24 pb-16 bg-white">
+    <section ref={sectionRef} className="pt-24 pb-16 bg-blue-50">
       <div className="container">
         {/* Hero Section */}
         <motion.div
@@ -92,10 +92,10 @@ const ServicesPage = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="heading-xl text-neutral-900 mb-6">
+          <h1 className="heading-xl text-blue-900 mb-6">
             Our <span className="text-gradient">Services</span>
           </h1>
-          <p className="body-lg text-neutral-600 max-w-3xl mx-auto">
+          <p className="body-lg text-blue-700 max-w-3xl mx-auto">
             Complete printing solutions from pre-press to post-press. We handle every stage 
             of the printing process with professional expertise and cutting-edge technology.
           </p>
@@ -119,12 +119,12 @@ const ServicesPage = () => {
                   </span>
                 </div>
                 
-                <h3 className="heading-sm text-neutral-900 mb-3">{service.title}</h3>
-                <p className="body-md text-neutral-600 mb-4">{service.description}</p>
+                <h3 className="heading-sm text-blue-900 mb-3">{service.title}</h3>
+                <p className="body-md text-blue-700 mb-4">{service.description}</p>
                 
                 <ul className="space-y-2 mb-6">
                   {service.features.map((feature, featureIndex) => (
-                    <li key={featureIndex} className="flex items-center text-sm text-neutral-600">
+                    <li key={featureIndex} className="flex items-center text-sm text-blue-700">
                       <div className="w-1.5 h-1.5 bg-primary-500 rounded-full mr-3"></div>
                       {feature}
                     </li>
@@ -170,35 +170,35 @@ const ServicesPage = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h3 className="heading-lg text-neutral-900 mb-8 text-center">Our Numbers</h3>
+          <h3 className="heading-lg text-blue-900 mb-8 text-center">Our Numbers</h3>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="text-center">
               <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Users className="w-8 h-8 text-primary-600" />
               </div>
-              <div className="text-3xl font-bold text-neutral-900 mb-2">1000+</div>
-              <p className="text-neutral-600">Happy Clients</p>
+              <div className="text-3xl font-bold text-blue-900 mb-2">1000+</div>
+              <p className="text-blue-700">Happy Clients</p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Award className="w-8 h-8 text-green-600" />
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Award className="w-8 h-8 text-blue-600" />
               </div>
-              <div className="text-3xl font-bold text-neutral-900 mb-2">27+</div>
-              <p className="text-neutral-600">Years Experience</p>
+              <div className="text-3xl font-bold text-blue-900 mb-2">27+</div>
+              <p className="text-blue-700">Years Experience</p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <CheckCircle className="w-8 h-8 text-purple-600" />
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <CheckCircle className="w-8 h-8 text-blue-600" />
               </div>
-              <div className="text-3xl font-bold text-neutral-900 mb-2">5000+</div>
-              <p className="text-neutral-600">Projects Completed</p>
+              <div className="text-3xl font-bold text-blue-900 mb-2">5000+</div>
+              <p className="text-blue-700">Projects Completed</p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Clock className="w-8 h-8 text-orange-600" />
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Clock className="w-8 h-8 text-blue-600" />
               </div>
-              <div className="text-3xl font-bold text-neutral-900 mb-2">24/7</div>
-              <p className="text-neutral-600">Customer Support</p>
+              <div className="text-3xl font-bold text-blue-900 mb-2">24/7</div>
+              <p className="text-blue-700">Customer Support</p>
             </div>
           </div>
         </motion.div>

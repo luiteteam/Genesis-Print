@@ -72,7 +72,7 @@ const Services = () => {
 
 
   return (
-    <section ref={sectionRef} id="services" className="section-padding bg-white">
+    <section ref={sectionRef} id="services" className="section-padding bg-blue-200">
       <div className="container">
         <motion.div
           className="text-center mb-16"
@@ -81,10 +81,10 @@ const Services = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="heading-lg text-neutral-900 mb-4">
+          <h2 className="heading-lg text-blue-900 mb-4">
             Our <span className="text-gradient">Services</span>
           </h2>
-          <p className="body-lg text-neutral-600 max-w-2xl mx-auto">
+          <p className="body-lg text-blue-700 max-w-2xl mx-auto">
             Complete printing solutions from pre-press to post-press. We handle every stage 
             of the printing process with professional expertise and cutting-edge technology.
           </p>
@@ -107,12 +107,12 @@ const Services = () => {
                   </span>
                 </div>
                 
-                <h3 className="heading-sm text-neutral-900 mb-3">{service.title}</h3>
-                <p className="body-md text-neutral-600 mb-4">{service.description}</p>
+                <h3 className="heading-sm text-blue-900 mb-3">{service.title}</h3>
+                <p className="body-md text-blue-700 mb-4">{service.description}</p>
                 
                 <ul className="space-y-2 mb-6">
                   {service.features.map((feature, featureIndex) => (
-                    <li key={featureIndex} className="flex items-center text-sm text-neutral-600">
+                    <li key={featureIndex} className="flex items-center text-sm text-blue-700">
                       <div className="w-1.5 h-1.5 bg-primary-500 rounded-full mr-3"></div>
                       {feature}
                     </li>

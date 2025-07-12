@@ -68,7 +68,7 @@ const OurMachines = () => {
   ];
 
   return (
-    <section ref={sectionRef} id="machines" className="section-padding bg-neutral-50">
+    <section ref={sectionRef} id="machines" className="section-padding bg-blue-200">
       <div className="container">
         <motion.div
           className="text-center mb-10"
@@ -77,10 +77,10 @@ const OurMachines = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="heading-lg text-neutral-900 mb-4">
+          <h2 className="heading-lg text-blue-900 mb-4">
             Our <span className="text-gradient">Printing Machinery</span>
           </h2>
-          <p className="body-lg text-neutral-600 max-w-2xl mx-auto">
+          <p className="body-lg text-blue-700 max-w-2xl mx-auto">
             State-of-the-art equipment ensuring precision and efficiency in every print job
           </p>
         </motion.div>
@@ -91,7 +91,7 @@ const OurMachines = () => {
           {machines.map((machine, index) => (
             <motion.div
               key={index}
-              className="machine-card min-w-[85%] snap-center bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow overflow-hidden"
+              className="machine-card min-w-[85%] snap-center bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow overflow-hidden border border-blue-200"
               whileHover={{ y: -5 }}
               transition={{ duration: 0.3 }}
             >
@@ -102,15 +102,15 @@ const OurMachines = () => {
                   className="max-h-full max-w-full object-contain p-6 group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
-              <hr className="border-t border-neutral-200 mx-6" />
+              <hr className="border-t border-blue-200 mx-6" />
               <div className="p-6">
                 <div className="flex items-start gap-4">
                   <div className="flex items-center justify-center bg-primary-100 rounded-lg p-3">
                     <machine.icon className="w-6 h-6 text-primary-600" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-neutral-900 mb-1">{machine.name}</h3>
-                    <p className="text-sm text-neutral-600">{machine.description}</p>
+                    <h3 className="text-lg font-semibold text-blue-900 mb-1">{machine.name}</h3>
+                    <p className="text-sm text-blue-700">{machine.description}</p>
                   </div>
                 </div>
               </div>
@@ -123,7 +123,7 @@ const OurMachines = () => {
           {machines.map((machine, index) => (
             <motion.div
               key={index}
-              className="machine-card group bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow overflow-hidden"
+              className="machine-card group bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow overflow-hidden border border-blue-200"
               whileHover={{ y: -5 }}
               transition={{ duration: 0.3 }}
             >
@@ -134,15 +134,15 @@ const OurMachines = () => {
                   className="max-h-full max-w-full object-contain p-6 group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
-              <hr className="border-t border-neutral-200 mx-6" />
+              <hr className="border-t border-blue-200 mx-6" />
               <div className="p-6">
                 <div className="flex items-start gap-4">
                   <div className="flex items-center justify-center bg-primary-100 rounded-lg p-3">
                     <machine.icon className="w-6 h-6 text-primary-600" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-neutral-900 mb-1">{machine.name}</h3>
-                    <p className="text-sm text-neutral-600">{machine.description}</p>
+                    <h3 className="text-lg font-semibold text-blue-900 mb-1">{machine.name}</h3>
+                    <p className="text-sm text-blue-700">{machine.description}</p>
                   </div>
                 </div>
               </div>

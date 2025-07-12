@@ -104,7 +104,7 @@ const PrePress = () => {
   ];
 
   return (
-    <section ref={sectionRef} className="pt-24 pb-16 bg-white">
+    <section ref={sectionRef} className="pt-24 pb-16 bg-blue-50">
       <div className="container">
         {/* Hero Section */}
         <motion.div
@@ -113,10 +113,10 @@ const PrePress = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="heading-xl text-neutral-900 mb-6">
+          <h1 className="heading-xl text-blue-900 mb-6">
             <span className="text-gradient">PRE PRESS</span> Services
           </h1>
-          <p className="body-lg text-neutral-600 max-w-3xl mx-auto">
+          <p className="body-lg text-blue-700 max-w-3xl mx-auto">
             Professional pre-press services that ensure your designs are print-ready and optimized 
             for the highest quality output. From concept to plate, we handle every detail.
           </p>
@@ -134,14 +134,14 @@ const PrePress = () => {
                 <div className="flex items-center justify-center w-16 h-16 bg-blue-100 rounded-xl mr-4">
                   <service.icon className="w-8 h-8 text-blue-600" />
                 </div>
-                <h3 className="heading-md text-neutral-900">{service.title}</h3>
+                <h3 className="heading-md text-blue-900">{service.title}</h3>
               </div>
               
-              <p className="body-md text-neutral-600 mb-6">{service.description}</p>
+              <p className="body-md text-blue-700 mb-6">{service.description}</p>
               
               <ul className="space-y-3">
                 {service.features.map((feature, featureIndex) => (
-                  <li key={featureIndex} className="flex items-center text-sm text-neutral-600">
+                  <li key={featureIndex} className="flex items-center text-sm text-blue-700">
                     <CheckCircle className="w-4 h-4 text-blue-500 mr-3 flex-shrink-0" />
                     {feature}
                   </li>
@@ -178,35 +178,35 @@ const PrePress = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h3 className="heading-lg text-neutral-900 mb-8 text-center">Our Pre-Press Process</h3>
+          <h3 className="heading-lg text-blue-900 mb-8 text-center">Our Pre-Press Process</h3>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
             <div className="text-center">
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl font-bold text-blue-600">1</span>
               </div>
-              <h4 className="font-semibold text-neutral-900 mb-2">File Review</h4>
-              <p className="text-sm text-neutral-600">We review your files for print readiness</p>
+              <h4 className="font-semibold text-blue-900 mb-2">File Review</h4>
+              <p className="text-sm text-blue-700">We review your files for print readiness</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl font-bold text-blue-600">2</span>
               </div>
-              <h4 className="font-semibold text-neutral-900 mb-2">Optimization</h4>
-              <p className="text-sm text-neutral-600">Optimize files for best print quality</p>
+              <h4 className="font-semibold text-blue-900 mb-2">Optimization</h4>
+              <p className="text-sm text-blue-700">Optimize files for best print quality</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl font-bold text-blue-600">3</span>
               </div>
-              <h4 className="font-semibold text-neutral-900 mb-2">Plate Making</h4>
-              <p className="text-sm text-neutral-600">Create high-quality printing plates</p>
+              <h4 className="font-semibold text-blue-900 mb-2">Plate Making</h4>
+              <p className="text-sm text-blue-700">Create high-quality printing plates</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl font-bold text-blue-600">4</span>
               </div>
-              <h4 className="font-semibold text-neutral-900 mb-2">Quality Check</h4>
-              <p className="text-sm text-neutral-600">Final quality assurance before printing</p>
+              <h4 className="font-semibold text-blue-900 mb-2">Quality Check</h4>
+              <p className="text-sm text-blue-700">Final quality assurance before printing</p>
             </div>
           </div>
         </motion.div>

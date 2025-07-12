@@ -114,7 +114,7 @@ const Press = () => {
   ];
 
   return (
-    <section ref={sectionRef} className="pt-24 pb-16 bg-white">
+    <section ref={sectionRef} className="pt-24 pb-16 bg-blue-50">
       <div className="container">
         {/* Hero Section */}
         <motion.div
@@ -123,10 +123,10 @@ const Press = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="heading-xl text-neutral-900 mb-6">
+          <h1 className="heading-xl text-blue-900 mb-6">
             <span className="text-gradient">PRESS</span> Services
           </h1>
-          <p className="body-lg text-neutral-600 max-w-3xl mx-auto">
+          <p className="body-lg text-blue-700 max-w-3xl mx-auto">
             Professional printing services using cutting-edge technology to deliver 
             high-quality results for all your printing needs. From single color to full-color printing.
           </p>
@@ -137,22 +137,22 @@ const Press = () => {
           {services.map((service, index) => (
             <motion.div
               key={index}
-              className="service-detail bg-white border-2 border-green-200 rounded-xl p-8 hover:shadow-lg transition-all duration-300"
+              className="service-detail bg-white border-2 border-blue-200 rounded-xl p-8 hover:shadow-lg transition-all duration-300"
               whileHover={{ y: -5 }}
             >
               <div className="flex items-center mb-6">
-                <div className="flex items-center justify-center w-16 h-16 bg-green-100 rounded-xl mr-4">
-                  <service.icon className="w-8 h-8 text-green-600" />
+                <div className="flex items-center justify-center w-16 h-16 bg-blue-100 rounded-xl mr-4">
+                  <service.icon className="w-8 h-8 text-blue-600" />
                 </div>
-                <h3 className="heading-md text-neutral-900">{service.title}</h3>
+                <h3 className="heading-md text-blue-900">{service.title}</h3>
               </div>
               
-              <p className="body-md text-neutral-600 mb-6">{service.description}</p>
+              <p className="body-md text-blue-700 mb-6">{service.description}</p>
               
               <ul className="space-y-3">
                 {service.features.map((feature, featureIndex) => (
-                  <li key={featureIndex} className="flex items-center text-sm text-neutral-600">
-                    <CheckCircle className="w-4 h-4 text-green-500 mr-3 flex-shrink-0" />
+                  <li key={featureIndex} className="flex items-center text-sm text-blue-700">
+                    <CheckCircle className="w-4 h-4 text-blue-500 mr-3 flex-shrink-0" />
                     {feature}
                   </li>
                 ))}
@@ -163,7 +163,7 @@ const Press = () => {
 
         {/* Benefits Section */}
         <motion.div
-          className="bg-gradient-to-r from-green-600 to-green-700 rounded-2xl p-8 text-white mb-16"
+          className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-2xl p-8 text-white mb-16"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -173,7 +173,7 @@ const Press = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {benefits.map((benefit, index) => (
               <div key={index} className="flex items-center">
-                <Award className="w-5 h-5 mr-3 text-green-200" />
+                <Award className="w-5 h-5 mr-3 text-blue-200" />
                 <span className="text-white/90">{benefit}</span>
               </div>
             ))}
@@ -188,12 +188,12 @@ const Press = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h3 className="heading-lg text-neutral-900 mb-8 text-center">Our Printing Capabilities</h3>
+          <h3 className="heading-lg text-blue-900 mb-8 text-center">Our Printing Capabilities</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {capabilities.map((capability, index) => (
-              <div key={index} className="bg-neutral-50 rounded-lg p-6 text-center">
-                <Zap className="w-8 h-8 text-green-600 mx-auto mb-3" />
-                <p className="text-neutral-700 font-medium">{capability}</p>
+              <div key={index} className="bg-white rounded-lg p-6 text-center border border-blue-200">
+                <Zap className="w-8 h-8 text-blue-600 mx-auto mb-3" />
+                <p className="text-blue-700 font-medium">{capability}</p>
               </div>
             ))}
           </div>

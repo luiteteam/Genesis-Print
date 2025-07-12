@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const About = () => {
   return (
-    <section className="pt-24 pb-16 bg-neutral-50">
+    <section className="pt-24 pb-16 bg-blue-50">
       <div className="container">
         {/* Hero Section */}
         <motion.div
@@ -14,10 +14,10 @@ const About = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="heading-xl text-neutral-900 mb-6">
+          <h1 className="heading-xl text-blue-900 mb-6">
             About <span className="text-gradient">Genesis Print</span>
           </h1>
-          <p className="body-lg text-neutral-600 max-w-3xl mx-auto">
+          <p className="body-lg text-blue-700 max-w-3xl mx-auto">
             Pioneering Excellence in Color Printing Since 1998
           </p>
         </motion.div>
@@ -31,13 +31,13 @@ const About = () => {
             transition={{ duration: 0.8 }}
             className="space-y-6"
           >
-            <h2 className="heading-lg text-neutral-900">
+            <h2 className="heading-lg text-blue-900">
               Genesis Printers & Publishers Private Limited
             </h2>
             
-            <div className="space-y-4 text-lg leading-relaxed text-neutral-700">
+            <div className="space-y-4 text-lg leading-relaxed text-blue-700">
               <p>
-                Genesis Printers & Publishers Pvt. Ltd. was born out of a visionary initiative to bridge a critical gap in the printing landscape of Northeast India. Recognizing the absence of advanced color printing facilities in the region, visionary entrepreneur <span className="font-semibold text-neutral-900">Rita Saikia</span> laid the foundation for what would become a transformational enterprise in 1998.
+                Genesis Printers & Publishers Pvt. Ltd. was born out of a visionary initiative to bridge a critical gap in the printing landscape of Northeast India. Recognizing the absence of advanced color printing facilities in the region, visionary entrepreneur <span className="font-semibold text-blue-900">Rita Saikia</span> laid the foundation for what would become a transformational enterprise in 1998.
               </p>
 
               <p>
@@ -90,8 +90,8 @@ const About = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <div className="bg-white rounded-2xl p-8 shadow-lg">
-            <div className="space-y-6 text-lg leading-relaxed text-neutral-700">
+          <div className="bg-white rounded-2xl p-8 shadow-lg border border-blue-200">
+            <div className="space-y-6 text-lg leading-relaxed text-blue-700">
               <p>
                 Before Genesis began operations, a considerable volume of color printing jobs had to be outsourced from other parts of the country, resulting in delays, higher costs, and limited creative flexibility for local clients. The inception of Genesis changed this dynamic entirely. The company not only retained local business that was previously going out of the region but also catalysed the creation of a robust, homegrown color printing industry.
               </p>

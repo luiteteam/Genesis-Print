@@ -35,7 +35,7 @@ const Products = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} id="products" className="section-padding pt-[120px] pb-6 bg-neutral-50">
+    <section ref={sectionRef} id="products" className="section-padding pt-[120px] pb-6 bg-blue-50">
 
       <div className="container">
         {/* Header */}
@@ -50,11 +50,11 @@ const Products = () => {
             <div className="flex items-center justify-center w-14 h-14 bg-gradient-primary rounded-full mr-3">
               <BookOpen className="w-7 h-7 text-white" />
             </div>
-            <h1 className="heading-lg text-neutral-900">
+            <h1 className="heading-lg text-blue-900">
               Our <span className="text-gradient">Hard Bound Books</span>
             </h1>
           </div>
-          <p className="body-lg text-neutral-600 max-w-2xl mx-auto">
+          <p className="body-lg text-blue-700 max-w-2xl mx-auto">
             Explore some of the premium hard bound books crafted at Genesis Press. Each book showcases
             our dedication to quality and printing excellence.
           </p>
@@ -72,22 +72,22 @@ const Products = () => {
             <div className="flex items-center justify-center w-12 h-12 bg-primary-100 rounded-full mx-auto mb-2">
               <BookOpen className="w-6 h-6 text-primary-600" />
             </div>
-            <div className="text-2xl font-bold text-neutral-900">500+</div>
-            <div className="text-sm text-neutral-600">Books Printed</div>
+            <div className="text-2xl font-bold text-blue-900">500+</div>
+            <div className="text-sm text-blue-700">Books Printed</div>
           </div>
           <div className="text-center">
             <div className="flex items-center justify-center w-12 h-12 bg-primary-100 rounded-full mx-auto mb-2">
               <Star className="w-6 h-6 text-primary-600" />
             </div>
-            <div className="text-2xl font-bold text-neutral-900">Premium</div>
-            <div className="text-sm text-neutral-600">Quality Materials</div>
+            <div className="text-2xl font-bold text-blue-900">Premium</div>
+            <div className="text-sm text-blue-700">Quality Materials</div>
           </div>
           <div className="text-center">
             <div className="flex items-center justify-center w-12 h-12 bg-primary-100 rounded-full mx-auto mb-2">
               <Award className="w-6 h-6 text-primary-600" />
             </div>
-            <div className="text-2xl font-bold text-neutral-900">Custom</div>
-            <div className="text-sm text-neutral-600">Design Options</div>
+            <div className="text-2xl font-bold text-blue-900">Custom</div>
+            <div className="text-sm text-blue-700">Design Options</div>
           </div>
         </motion.div>
 
@@ -95,7 +95,7 @@ const Products = () => {
         <div className="products-grid grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mb-16">
           {/* Row 1 */}
           <motion.div
-            className="product-card relative group rounded-xl overflow-hidden shadow hover:shadow-md transition-shadow col-span-2 row-span-2"
+            className="product-card relative group rounded-xl overflow-hidden shadow hover:shadow-md transition-shadow col-span-2 row-span-2 bg-white border border-blue-200"
             whileHover={{ scale: 1.02 }}
             transition={{ duration: 0.3 }}
           >
@@ -103,13 +103,13 @@ const Products = () => {
               <img
                 src="/books/1.jpg"
                 alt="Book 1"
-                className="w-full h-full object-contain bg-neutral-100 p-4 group-hover:scale-105 transition-transform duration-300"
+                className="w-full h-full object-contain bg-blue-50 p-4 group-hover:scale-105 transition-transform duration-300"
               />
             </div>
           </motion.div>
 
           <motion.div
-            className="product-card relative group rounded-xl overflow-hidden shadow hover:shadow-md transition-shadow"
+            className="product-card relative group rounded-xl overflow-hidden shadow hover:shadow-md transition-shadow bg-white border border-blue-200"
             whileHover={{ scale: 1.02 }}
             transition={{ duration: 0.3 }}
           >
@@ -117,13 +117,13 @@ const Products = () => {
               <img
                 src="/books/2.jpg"
                 alt="Book 2"
-                className="w-full h-full object-contain bg-neutral-100 p-4 group-hover:scale-105 transition-transform duration-300"
+                className="w-full h-full object-contain bg-blue-50 p-4 group-hover:scale-105 transition-transform duration-300"
               />
             </div>
           </motion.div>
 
           <motion.div
-            className="product-card relative group rounded-xl overflow-hidden shadow hover:shadow-md transition-shadow"
+            className="product-card relative group rounded-xl overflow-hidden shadow hover:shadow-md transition-shadow bg-white border border-blue-200"
             whileHover={{ scale: 1.02 }}
             transition={{ duration: 0.3 }}
           >
@@ -131,14 +131,14 @@ const Products = () => {
               <img
                 src="/books/3.jpg"
                 alt="Book 3"
-                className="w-full h-full object-contain bg-neutral-100 p-4 group-hover:scale-105 transition-transform duration-300"
+                className="w-full h-full object-contain bg-blue-50 p-4 group-hover:scale-105 transition-transform duration-300"
               />
             </div>
           </motion.div>
 
           {/* Row 2 */}
           <motion.div
-            className="product-card relative group rounded-xl overflow-hidden shadow hover:shadow-md transition-shadow"
+            className="product-card relative group rounded-xl overflow-hidden shadow hover:shadow-md transition-shadow bg-white border border-blue-200"
             whileHover={{ scale: 1.02 }}
             transition={{ duration: 0.3 }}
           >
@@ -146,13 +146,13 @@ const Products = () => {
               <img
                 src="/books/4.jpg"
                 alt="Book 4"
-                className="w-full h-full object-contain bg-neutral-100 p-4 group-hover:scale-105 transition-transform duration-300"
+                className="w-full h-full object-contain bg-blue-50 p-4 group-hover:scale-105 transition-transform duration-300"
               />
             </div>
           </motion.div>
 
           <motion.div
-            className="product-card relative group rounded-xl overflow-hidden shadow hover:shadow-md transition-shadow col-span-2"
+            className="product-card relative group rounded-xl overflow-hidden shadow hover:shadow-md transition-shadow col-span-2 bg-white border border-blue-200"
             whileHover={{ scale: 1.02 }}
             transition={{ duration: 0.3 }}
           >
@@ -160,14 +160,14 @@ const Products = () => {
               <img
                 src="/books/5.jpg"
                 alt="Book 5"
-                className="w-full h-full object-contain bg-neutral-100 p-4 group-hover:scale-105 transition-transform duration-300"
+                className="w-full h-full object-contain bg-blue-50 p-4 group-hover:scale-105 transition-transform duration-300"
               />
             </div>
           </motion.div>
 
           {/* Row 3 */}
           <motion.div
-            className="product-card relative group rounded-xl overflow-hidden shadow hover:shadow-md transition-shadow"
+            className="product-card relative group rounded-xl overflow-hidden shadow hover:shadow-md transition-shadow bg-white border border-blue-200"
             whileHover={{ scale: 1.02 }}
             transition={{ duration: 0.3 }}
           >
@@ -175,13 +175,13 @@ const Products = () => {
               <img
                 src="/books/6.jpg"
                 alt="Book 6"
-                className="w-full h-full object-contain bg-neutral-100 p-4 group-hover:scale-105 transition-transform duration-300"
+                className="w-full h-full object-contain bg-blue-50 p-4 group-hover:scale-105 transition-transform duration-300"
               />
             </div>
           </motion.div>
 
           <motion.div
-            className="product-card relative group rounded-xl overflow-hidden shadow hover:shadow-md transition-shadow"
+            className="product-card relative group rounded-xl overflow-hidden shadow hover:shadow-md transition-shadow bg-white border border-blue-200"
             whileHover={{ scale: 1.02 }}
             transition={{ duration: 0.3 }}
           >
@@ -189,7 +189,7 @@ const Products = () => {
               <img
                 src="/books/7.jpg"
                 alt="Book 7"
-                className="w-full h-full object-contain bg-neutral-100 p-4 group-hover:scale-105 transition-transform duration-300"
+                className="w-full h-full object-contain bg-blue-50 p-4 group-hover:scale-105 transition-transform duration-300"
               />
             </div>
           </motion.div>

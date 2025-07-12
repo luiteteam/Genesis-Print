@@ -157,7 +157,7 @@ const PostPress = () => {
   ];
 
   return (
-    <section ref={sectionRef} className="pt-24 pb-16 bg-white">
+    <section ref={sectionRef} className="pt-24 pb-16 bg-blue-50">
       <div className="container">
         {/* Hero Section */}
         <motion.div
@@ -166,10 +166,10 @@ const PostPress = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="heading-xl text-neutral-900 mb-6">
+          <h1 className="heading-xl text-blue-900 mb-6">
             <span className="text-gradient">POST PRESS</span> Services
           </h1>
-          <p className="body-lg text-neutral-600 max-w-3xl mx-auto">
+          <p className="body-lg text-blue-700 max-w-3xl mx-auto">
             Professional finishing services that transform your printed materials into 
             polished, professional products. From lamination to binding, we handle it all.
           </p>
@@ -180,22 +180,22 @@ const PostPress = () => {
           {services.map((service, index) => (
             <motion.div
               key={index}
-              className="service-detail bg-white border-2 border-purple-200 rounded-xl p-6 hover:shadow-lg transition-all duration-300"
+              className="service-detail bg-white border-2 border-blue-200 rounded-xl p-6 hover:shadow-lg transition-all duration-300"
               whileHover={{ y: -5 }}
             >
               <div className="flex items-center mb-4">
-                <div className="flex items-center justify-center w-12 h-12 bg-purple-100 rounded-lg mr-3">
-                  <service.icon className="w-6 h-6 text-purple-600" />
+                <div className="flex items-center justify-center w-12 h-12 bg-blue-100 rounded-lg mr-3">
+                  <service.icon className="w-6 h-6 text-blue-600" />
                 </div>
-                <h3 className="heading-sm text-neutral-900">{service.title}</h3>
+                <h3 className="heading-sm text-blue-900">{service.title}</h3>
               </div>
               
-              <p className="body-md text-neutral-600 mb-4">{service.description}</p>
+              <p className="body-md text-blue-700 mb-4">{service.description}</p>
               
               <ul className="space-y-2">
                 {service.features.map((feature, featureIndex) => (
-                  <li key={featureIndex} className="flex items-center text-sm text-neutral-600">
-                    <CheckCircle className="w-3 h-3 text-purple-500 mr-2 flex-shrink-0" />
+                  <li key={featureIndex} className="flex items-center text-sm text-blue-700">
+                    <CheckCircle className="w-3 h-3 text-blue-500 mr-2 flex-shrink-0" />
                     {feature}
                   </li>
                 ))}

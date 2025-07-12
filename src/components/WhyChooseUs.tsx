@@ -69,7 +69,7 @@ const WhyChooseUs = () => {
   ];
 
   return (
-    <section ref={sectionRef} id="about" className="section-padding bg-white">
+    <section ref={sectionRef} id="about" className="section-padding bg-blue-200">
       <div className="container">
         <motion.div
           className="text-center mb-16"
@@ -78,10 +78,10 @@ const WhyChooseUs = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="heading-lg text-neutral-900 mb-4">
+          <h2 className="heading-lg text-blue-900 mb-4">
             Why Choose <span className="text-gradient">Genesis</span>?
           </h2>
-          <p className="body-lg text-neutral-600 max-w-2xl mx-auto">
+          <p className="body-lg text-blue-700 max-w-2xl mx-auto">
             We're committed to delivering exceptional printing services that exceed your expectations. 
             Here's what sets us apart from the competition.
           </p>
@@ -97,8 +97,8 @@ const WhyChooseUs = () => {
               <div className={`inline-flex items-center justify-center w-16 h-16 rounded-full ${reason.color} mb-6 group-hover:scale-110 transition-transform duration-300`}>
                 <reason.icon className="w-8 h-8" />
               </div>
-              <h3 className="heading-sm text-neutral-900 mb-4">{reason.title}</h3>
-              <p className="body-md text-neutral-600">{reason.description}</p>
+              <h3 className="heading-sm text-blue-900 mb-4">{reason.title}</h3>
+              <p className="body-md text-blue-700">{reason.description}</p>
             </motion.div>
           ))}
         </div>

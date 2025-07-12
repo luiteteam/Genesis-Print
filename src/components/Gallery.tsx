@@ -168,7 +168,7 @@ const Gallery = () => {
   const isVideo = (url: string) => url.includes('.mp4');
 
   return (
-    <section ref={sectionRef} className="pt-24 pb-16 bg-white">
+    <section ref={sectionRef} className="pt-24 pb-16 bg-blue-50">
       <div className="container">
         {/* Hero Section */}
         <motion.div
@@ -177,10 +177,10 @@ const Gallery = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="heading-xl text-neutral-900 mb-6">
+          <h1 className="heading-xl text-blue-900 mb-6">
             Our <span className="text-gradient">Portfolio</span>
           </h1>
-          <p className="body-lg text-neutral-600 max-w-3xl mx-auto">
+          <p className="body-lg text-blue-700 max-w-3xl mx-auto">
             Explore our extensive collection of printing work, from machinery showcases 
             to finished products and behind-the-scenes videos.
           </p>
@@ -200,7 +200,7 @@ const Gallery = () => {
               className={`px-6 py-3 rounded-lg font-medium transition-all duration-200 ${
                 activeCategory === category.id
                   ? 'bg-primary-600 text-white shadow-lg'
-                  : 'bg-neutral-100 text-neutral-700 hover:bg-neutral-200'
+                  : 'bg-white text-blue-700 border border-blue-200 hover:bg-blue-50'
               }`}
             >
               {category.name} ({category.count})

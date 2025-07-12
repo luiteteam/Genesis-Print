@@ -45,7 +45,7 @@ const Navbar = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-black/20 backdrop-blur-sm'
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-blue-900/20 backdrop-blur-sm'
         }`}
     >
       <div className="container">
@@ -78,14 +78,14 @@ const Navbar = () => {
                       e.preventDefault();
                       handleNavClick(item.href, item.isHash);
                     }}
-                    className={`font-medium transition-colors duration-200 ${scrolled ? 'text-neutral-700 hover:text-primary-600' : 'text-white hover:text-primary-300'}`}
+                    className={`font-medium transition-colors duration-200 ${scrolled ? 'text-blue-700 hover:text-primary-600' : 'text-white hover:text-blue-200'}`}
                   >
                     {item.name}
                   </a>
                 ) : (
                   <Link
                     to={item.href}
-                    className={`font-medium transition-colors duration-200 ${scrolled ? 'text-neutral-700 hover:text-primary-600' : 'text-white hover:text-primary-300'} ${location.pathname === item.href ? (scrolled ? 'text-primary-600' : 'text-primary-300') : ''
+                    className={`font-medium transition-colors duration-200 ${scrolled ? 'text-blue-700 hover:text-primary-600' : 'text-white hover:text-blue-200'} ${location.pathname === item.href ? (scrolled ? 'text-primary-600' : 'text-blue-200') : ''
                       }`}
                   >
                     {item.name}
@@ -113,11 +113,11 @@ const Navbar = () => {
 
           {/* Mobile Menu Button */}
           <motion.button
-            className={`md:hidden p-2 rounded-lg transition-colors ${scrolled ? 'hover:bg-neutral-100' : 'hover:bg-white/20'}`}
+            className={`md:hidden p-2 rounded-lg transition-colors ${scrolled ? 'hover:bg-blue-50' : 'hover:bg-white/20'}`}
             onClick={() => setIsOpen(!isOpen)}
             whileTap={{ scale: 0.95 }}
           >
-            {isOpen ? <X className={`w-6 h-6 ${scrolled ? 'text-neutral-700' : 'text-white'}`} /> : <Menu className={`w-6 h-6 ${scrolled ? 'text-neutral-700' : 'text-white'}`} />}
+            {isOpen ? <X className={`w-6 h-6 ${scrolled ? 'text-blue-700' : 'text-white'}`} /> : <Menu className={`w-6 h-6 ${scrolled ? 'text-blue-700' : 'text-white'}`} />}
           </motion.button>
         </div>
       </div>
@@ -130,7 +130,7 @@ const Navbar = () => {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden bg-white border-t border-neutral-200"
+            className="md:hidden bg-white border-t border-blue-200"
           >
             <div className="container py-4">
               <div className="flex flex-col space-y-4">
@@ -146,7 +146,7 @@ const Navbar = () => {
                           e.preventDefault();
                           handleNavClick(item.href, item.isHash);
                         }}
-                        className="text-neutral-700 hover:text-primary-600 font-medium py-2 transition-colors block"
+                        className="text-blue-700 hover:text-primary-600 font-medium py-2 transition-colors block"
                       >
                         {item.name}
                       </a>
@@ -154,7 +154,7 @@ const Navbar = () => {
                       <Link
                         to={item.href}
                         onClick={() => setIsOpen(false)}
-                        className={`text-neutral-700 hover:text-primary-600 font-medium py-2 transition-colors block ${location.pathname === item.href ? 'text-primary-600' : ''
+                        className={`text-blue-700 hover:text-primary-600 font-medium py-2 transition-colors block ${location.pathname === item.href ? 'text-primary-600' : ''
                           }`}
                       >
                         {item.name}

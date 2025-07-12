@@ -98,7 +98,7 @@ const Testimonials = () => {
   };
 
   return (
-    <section ref={sectionRef} className="py-16 md:py-20 lg:py-24 bg-white">
+    <section ref={sectionRef} className="py-16 md:py-20 lg:py-24 bg-blue-100">
       <div className="container px-4 sm:px-6">
         <motion.div
           className="testimonial-header text-center mb-12 md:mb-16"
@@ -107,10 +107,10 @@ const Testimonials = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true, margin: "-100px" }}
         >
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-neutral-900 mb-3">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-blue-900 mb-3">
             Client <span className="text-gradient">Testimonials</span>
           </h2>
-          <p className="text-base md:text-lg text-neutral-500 max-w-2xl mx-auto">
+          <p className="text-base md:text-lg text-blue-700 max-w-2xl mx-auto">
             Trusted by businesses and creatives who value quality printing
           </p>
         </motion.div>
@@ -120,20 +120,20 @@ const Testimonials = () => {
           <div className="hidden md:flex justify-between items-center mb-8 px-4">
             <motion.button
               onClick={prevTestimonial}
-              className="flex items-center justify-center w-12 h-12 bg-neutral-100 rounded-full hover:bg-neutral-200 transition-colors"
+              className="flex items-center justify-center w-12 h-12 bg-white rounded-full hover:bg-blue-50 transition-colors border border-blue-200"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <ChevronLeft className="w-6 h-6 text-neutral-600" />
+              <ChevronLeft className="w-6 h-6 text-blue-600" />
             </motion.button>
             
             <motion.button
               onClick={nextTestimonial}
-              className="flex items-center justify-center w-12 h-12 bg-neutral-100 rounded-full hover:bg-neutral-200 transition-colors"
+              className="flex items-center justify-center w-12 h-12 bg-white rounded-full hover:bg-blue-50 transition-colors border border-blue-200"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <ChevronRight className="w-6 h-6 text-neutral-600" />
+              <ChevronRight className="w-6 h-6 text-blue-600" />
             </motion.button>
           </div>
 
@@ -147,7 +147,7 @@ const Testimonials = () => {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -20 }}
                   transition={{ duration: 0.4, delay: index * 0.1 }}
-                  className="bg-neutral-50 rounded-xl p-6 border border-neutral-100 hover:shadow-md transition-shadow"
+                  className="bg-white rounded-xl p-6 border border-blue-200 hover:shadow-md transition-shadow"
                 >
                   <div className="flex items-center gap-4 mb-4">
                     <img
@@ -156,8 +156,8 @@ const Testimonials = () => {
                       className="w-14 h-14 rounded-full object-cover"
                     />
                     <div>
-                      <h4 className="font-medium text-lg text-neutral-900">{testimonial.name}</h4>
-                      <p className="text-sm text-neutral-500">{testimonial.position}, {testimonial.company}</p>
+                      <h4 className="font-medium text-lg text-blue-900">{testimonial.name}</h4>
+                      <p className="text-sm text-blue-700">{testimonial.position}, {testimonial.company}</p>
                     </div>
                   </div>
                   
@@ -167,7 +167,7 @@ const Testimonials = () => {
                     ))}
                   </div>
                   
-                  <p className="text-neutral-600 text-base leading-relaxed">
+                  <p className="text-blue-700 text-base leading-relaxed">
                     "{testimonial.text}"
                   </p>
                 </motion.div>
@@ -179,20 +179,20 @@ const Testimonials = () => {
           <div className="md:hidden flex justify-center gap-4 mt-8">
             <motion.button
               onClick={prevTestimonial}
-              className="flex items-center justify-center w-10 h-10 bg-neutral-100 rounded-full hover:bg-neutral-200 transition-colors"
+              className="flex items-center justify-center w-10 h-10 bg-white rounded-full hover:bg-blue-50 transition-colors border border-blue-200"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <ChevronLeft className="w-5 h-5 text-neutral-600" />
+              <ChevronLeft className="w-5 h-5 text-blue-600" />
             </motion.button>
             
             <motion.button
               onClick={nextTestimonial}
-              className="flex items-center justify-center w-10 h-10 bg-neutral-100 rounded-full hover:bg-neutral-200 transition-colors"
+              className="flex items-center justify-center w-10 h-10 bg-white rounded-full hover:bg-blue-50 transition-colors border border-blue-200"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <ChevronRight className="w-5 h-5 text-neutral-600" />
+              <ChevronRight className="w-5 h-5 text-blue-600" />
             </motion.button>
           </div>
 
