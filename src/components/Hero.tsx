@@ -60,21 +60,31 @@ const Hero = () => {
       ref={heroRef}
       className="relative min-h-screen pt-24 flex items-center justify-center overflow-hidden"
     >
-      {/* Background Pattern */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary-50 to-secondary-50">
-        <div className="absolute inset-0 bg-hero-pattern opacity-20"></div>
+      {/* Background Video */}
+      <div className="absolute inset-0 overflow-hidden">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover opacity-80"
+        >
+          <source src="/hero.mp4" type="video/mp4" />
+        </video>
+        {/* Overlay for better text readability */}
+        <div className="absolute inset-0 bg-black/40"></div>
       </div>
 
       <div className="container relative z-10 px-4">
         <div className="text-center max-w-4xl mx-auto">
-          <h1 className="hero-title heading-xl text-neutral-900 mb-6">
-            Professional Printing Solutions for Your{' '}
-            <span className="text-gradient">Business Needs</span>
+          <h1 className="hero-title heading-xl text-white mb-6">
+            Where Creativity Meets{' '}
+            <span className="text-gradient">Printing Excellence</span>
           </h1>
 
-          <p className="hero-subtitle body-lg text-neutral-600 mb-8 max-w-2xl mx-auto">
-            From business cards to large format banners, we deliver high-quality printing
-            services with fast turnaround times and exceptional customer service.
+          <p className="hero-subtitle body-lg text-white mb-8 max-w-2xl mx-auto">
+            Experience the future of printing with cutting-edge technology and unmatched quality. 
+            From concept to creation, we bring your vision to life with precision and style.
           </p>
 
           <div className="hero-cta flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
@@ -113,8 +123,8 @@ const Hero = () => {
                 <div className="flex items-center justify-center w-12 h-12 bg-primary-100 rounded-full mx-auto mb-3">
                   <stat.icon className="w-6 h-6 text-primary-600" />
                 </div>
-                <div className="text-2xl font-bold text-neutral-900">{stat.value}</div>
-                <div className="text-sm text-neutral-600">{stat.label}</div>
+                <div className="text-2xl font-bold text-white">{stat.value}</div>
+                <div className="text-sm text-white/80">{stat.label}</div>
               </motion.div>
             ))}
           </div>

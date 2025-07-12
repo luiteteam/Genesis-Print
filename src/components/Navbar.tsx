@@ -19,7 +19,8 @@ const Navbar = () => {
 
   const navItems = [
     { name: 'About', href: '/about', isHash: false },
-    { name: 'Services', href: '/#services', isHash: true },
+    { name: 'Services', href: '/services', isHash: false },
+    { name: 'Gallery', href: '/gallery', isHash: false },
     { name: 'Products', href: '/products', isHash: false },
     // { name: 'Contact', href: '/contact', isHash: false },
   ];
@@ -44,7 +45,7 @@ const Navbar = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-transparent'
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-black/20 backdrop-blur-sm'
         }`}
     >
       <div className="container">
@@ -77,14 +78,14 @@ const Navbar = () => {
                       e.preventDefault();
                       handleNavClick(item.href, item.isHash);
                     }}
-                    className="text-neutral-700 hover:text-primary-600 font-medium transition-colors duration-200"
+                    className={`font-medium transition-colors duration-200 ${scrolled ? 'text-neutral-700 hover:text-primary-600' : 'text-white hover:text-primary-300'}`}
                   >
                     {item.name}
                   </a>
                 ) : (
                   <Link
                     to={item.href}
-                    className={`text-neutral-700 hover:text-primary-600 font-medium transition-colors duration-200 ${location.pathname === item.href ? 'text-primary-600' : ''
+                    className={`font-medium transition-colors duration-200 ${scrolled ? 'text-neutral-700 hover:text-primary-600' : 'text-white hover:text-primary-300'} ${location.pathname === item.href ? (scrolled ? 'text-primary-600' : 'text-primary-300') : ''
                       }`}
                   >
                     {item.name}
@@ -102,7 +103,7 @@ const Navbar = () => {
                   window.location.href = '/contact';
                 }
               }}
-              className="btn-primary"
+              className={`${scrolled ? 'btn-primary' : 'bg-white/20 backdrop-blur-sm border-white/30 text-white hover:bg-white/30 hover:border-white/50'} inline-flex items-center justify-center px-6 py-3 border text-base font-medium rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl`}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -112,11 +113,11 @@ const Navbar = () => {
 
           {/* Mobile Menu Button */}
           <motion.button
-            className="md:hidden p-2 rounded-lg hover:bg-neutral-100 transition-colors"
+            className={`md:hidden p-2 rounded-lg transition-colors ${scrolled ? 'hover:bg-neutral-100' : 'hover:bg-white/20'}`}
             onClick={() => setIsOpen(!isOpen)}
             whileTap={{ scale: 0.95 }}
           >
-            {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            {isOpen ? <X className={`w-6 h-6 ${scrolled ? 'text-neutral-700' : 'text-white'}`} /> : <Menu className={`w-6 h-6 ${scrolled ? 'text-neutral-700' : 'text-white'}`} />}
           </motion.button>
         </div>
       </div>

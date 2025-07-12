@@ -1,0 +1,245 @@
+import { useEffect, useRef } from 'react';
+import { motion } from 'framer-motion';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { 
+  FileText, 
+  Package, 
+  Calendar,
+  CheckCircle,
+  Award,
+  Users,
+  Clock
+} from 'lucide-react';
+import { Link } from 'react-router-dom';
+
+gsap.registerPlugin(ScrollTrigger);
+
+const ServicesPage = () => {
+  const sectionRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    if (!sectionRef.current) return;
+
+    const ctx = gsap.context(() => {
+      gsap.set('.service-card', { y: 60, opacity: 0 });
+      
+      gsap.to('.service-card', {
+        y: 0,
+        opacity: 1,
+        duration: 0.8,
+        stagger: 0.15,
+        ease: 'power3.out',
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: 'top 80%',
+          end: 'bottom 20%',
+          toggleActions: 'play none none reverse'
+        },
+      });
+    }, sectionRef);
+
+    return () => ctx.revert();
+  }, []);
+
+  const services = [
+    {
+      icon: FileText,
+      title: 'PRE PRESS',
+      description: 'Complete pre-press services including desktop publishing, design, and plate making for professional printing.',
+      features: ['DTP (Desktop Publishing)', 'Graphic Designing', 'Plate Making', 'File Preparation'],
+      price: 'Custom Quote',
+      color: 'bg-blue-50 border-blue-200 hover:bg-blue-100',
+      link: '/prepress'
+    },
+    {
+      icon: Package,
+      title: 'PRESS',
+      description: 'High-quality printing services with both single color and multi-color printing capabilities.',
+      features: ['Single Colour Printing', 'Multi Colour Printing', 'Digital Printing', 'Offset Printing'],
+      price: 'Custom Quote',
+      color: 'bg-green-50 border-green-200 hover:bg-green-100',
+      link: '/press'
+    },
+    {
+      icon: Calendar,
+      title: 'POST PRESS',
+      description: 'Comprehensive finishing services to complete your printing projects with professional quality.',
+      features: ['Lamination', 'Folding & Creasing', 'Stitching', 'Perfect Binding', 'Hard Binding', 'Cutting', 'Packing', 'Stacking & Forwarding'],
+      price: 'Custom Quote',
+      color: 'bg-purple-50 border-purple-200 hover:bg-purple-100',
+      link: '/postpress'
+    }
+  ];
+
+  const benefits = [
+    'Complete printing solutions',
+    'Professional quality output',
+    'Fast turnaround times',
+    'Experienced team',
+    'Competitive pricing',
+    'Quality assurance'
+  ];
+
+  return (
+    <section ref={sectionRef} className="pt-24 pb-16 bg-white">
+      <div className="container">
+        {/* Hero Section */}
+        <motion.div
+          className="text-center mb-16"
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          <h1 className="heading-xl text-neutral-900 mb-6">
+            Our <span className="text-gradient">Services</span>
+          </h1>
+          <p className="body-lg text-neutral-600 max-w-3xl mx-auto">
+            Complete printing solutions from pre-press to post-press. We handle every stage 
+            of the printing process with professional expertise and cutting-edge technology.
+          </p>
+        </motion.div>
+
+        {/* Services Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto mb-16">
+          {services.map((service, index) => (
+            <Link key={index} to={service.link}>
+              <motion.div
+                className={`service-card border-2 rounded-xl p-6 transition-all duration-300 ${service.color} cursor-pointer`}
+                whileHover={{ scale: 1.05, y: -5 }}
+                transition={{ duration: 0.3 }}
+              >
+                <div className="flex items-start justify-between mb-4">
+                  <div className="flex items-center justify-center w-12 h-12 bg-white rounded-lg shadow-sm">
+                    <service.icon className="w-6 h-6 text-primary-600" />
+                  </div>
+                  <span className="text-sm font-semibold text-primary-600 bg-white px-3 py-1 rounded-full">
+                    {service.price}
+                  </span>
+                </div>
+                
+                <h3 className="heading-sm text-neutral-900 mb-3">{service.title}</h3>
+                <p className="body-md text-neutral-600 mb-4">{service.description}</p>
+                
+                <ul className="space-y-2 mb-6">
+                  {service.features.map((feature, featureIndex) => (
+                    <li key={featureIndex} className="flex items-center text-sm text-neutral-600">
+                      <div className="w-1.5 h-1.5 bg-primary-500 rounded-full mr-3"></div>
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+                
+                <motion.div
+                  className="w-full py-3 px-4 bg-primary-600 text-white rounded-lg font-medium hover:bg-primary-700 transition-colors text-center"
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                >
+                  Learn More
+                </motion.div>
+              </motion.div>
+            </Link>
+          ))}
+        </div>
+
+        {/* Benefits Section */}
+        <motion.div
+          className="bg-gradient-to-r from-primary-600 to-secondary-600 rounded-2xl p-8 text-white mb-16"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          <h3 className="heading-md mb-6 text-center">Why Choose Genesis Print?</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {benefits.map((benefit, index) => (
+              <div key={index} className="flex items-center">
+                <Award className="w-5 h-5 mr-3 text-primary-200" />
+                <span className="text-white/90">{benefit}</span>
+              </div>
+            ))}
+          </div>
+        </motion.div>
+
+        {/* Stats Section */}
+        <motion.div
+          className="mb-16"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          <h3 className="heading-lg text-neutral-900 mb-8 text-center">Our Numbers</h3>
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Users className="w-8 h-8 text-primary-600" />
+              </div>
+              <div className="text-3xl font-bold text-neutral-900 mb-2">1000+</div>
+              <p className="text-neutral-600">Happy Clients</p>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Award className="w-8 h-8 text-green-600" />
+              </div>
+              <div className="text-3xl font-bold text-neutral-900 mb-2">27+</div>
+              <p className="text-neutral-600">Years Experience</p>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <CheckCircle className="w-8 h-8 text-purple-600" />
+              </div>
+              <div className="text-3xl font-bold text-neutral-900 mb-2">5000+</div>
+              <p className="text-neutral-600">Projects Completed</p>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Clock className="w-8 h-8 text-orange-600" />
+              </div>
+              <div className="text-3xl font-bold text-neutral-900 mb-2">24/7</div>
+              <p className="text-neutral-600">Customer Support</p>
+            </div>
+          </div>
+        </motion.div>
+
+        {/* CTA Section */}
+        <motion.div
+          className="text-center"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          <div className="bg-neutral-100 rounded-2xl p-8">
+            <h3 className="heading-md mb-4">Ready to Start Your Project?</h3>
+            <p className="body-lg text-neutral-600 mb-6">
+              Get a custom quote for your printing requirements and let our experts handle the rest.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link to="/contact">
+                <motion.button
+                  className="btn-primary"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  Get Quote
+                </motion.button>
+              </Link>
+              <Link to="/about">
+                <motion.button
+                  className="btn-secondary"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  Learn About Us
+                </motion.button>
+              </Link>
+            </div>
+          </div>
+        </motion.div>
+      </div>
+    </section>
+  );
+};
+
+export default ServicesPage; 
