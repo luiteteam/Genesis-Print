@@ -3,11 +3,12 @@ import { ArrowRight, Phone } from 'lucide-react';
 
 const FinalCTA = () => {
   return (
-    <section className="py-12 md:py-16 lg:py-20 bg-gradient-to-r from-teal-600 to-purple-600 text-white">
+    <section className="py-12 md:py-16 lg:py-20 text-blue-900"
+      style={{ background: 'linear-gradient(90deg, #b3e0f7 0%, #e6faff 60%, #ffffff 100%)' }}>
       <div className="container px-4 sm:px-6">
         <div className="text-center">
           <motion.h2
-            className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 leading-tight"
+            className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 leading-tight text-blue-900"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -17,7 +18,7 @@ const FinalCTA = () => {
           </motion.h2>
           
           <motion.p
-            className="text-lg sm:text-xl md:text-xl mb-8 max-w-3xl mx-auto opacity-90 leading-relaxed"
+            className="text-lg sm:text-xl md:text-xl mb-8 max-w-3xl mx-auto opacity-90 leading-relaxed text-blue-800"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -41,26 +42,28 @@ const FinalCTA = () => {
               whileTap={{ scale: 0.95 }}
             >
               Get Free Quote
-              <ArrowRight className="w-5 h-5 ml-2" />
+              <ArrowRight className="w-5 h-5 ml-2 text-blue-600" />
             </motion.a>
             
             <motion.a
               href="tel:+919864351008"
-              className="inline-flex items-center justify-center px-6 py-3 sm:px-8 sm:py-3.5 border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-primary-600 transition-all text-base sm:text-lg w-full sm:w-auto"
+              className="inline-flex items-center px-8 py-3 border-2 border-blue-700 text-blue-700 rounded-lg font-semibold hover:bg-blue-50 transition-colors shadow ml-4"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <Phone className="w-5 h-5 mr-2" />
+              <Phone className="w-5 h-5 mr-2 text-blue-700" />
               Call Now
             </motion.a>
 
             <motion.a
               href="https://wa.me/918471916297"
-              className="inline-flex items-center justify-center px-6 py-3 sm:px-8 sm:py-3.5 border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-primary-600 transition-all text-base sm:text-lg w-full sm:w-auto"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-8 py-3 border-2 border-blue-700 text-blue-700 rounded-lg font-semibold hover:bg-blue-50 transition-colors shadow ml-4"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <Phone className="w-5 h-5 mr-2" />
+              <Phone className="w-5 h-5 mr-2 text-blue-700" />
               WhatsApp
             </motion.a>
           </motion.div>

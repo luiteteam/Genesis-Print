@@ -145,18 +145,19 @@ const ServicesPage = () => {
 
         {/* Benefits Section */}
         <motion.div
-          className="bg-gradient-to-r from-teal-600 to-purple-600 rounded-2xl p-8 text-white mb-16"
+          className="rounded-2xl p-8 mb-16"
+          style={{ background: 'linear-gradient(90deg, #b3e0f7 0%, #e6faff 60%, #ffffff 100%)' }}
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h3 className="heading-md mb-6 text-center">Why Choose Genesis Print?</h3>
+          <h3 className="heading-md mb-6 text-blue-900 text-center">Why Choose Genesis Print?</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {benefits.map((benefit, index) => (
               <div key={index} className="flex items-center">
-                <Award className="w-5 h-5 mr-3 text-teal-200" />
-                <span className="text-white/90">{benefit}</span>
+                <Award className="w-5 h-5 mr-3 text-blue-600" />
+                <span className="text-blue-800/90">{benefit}</span>
               </div>
             ))}
           </div>
@@ -204,19 +205,20 @@ const ServicesPage = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <div className="bg-gradient-to-r from-teal-600 to-purple-600 rounded-2xl p-8 text-white text-center">
-            <h3 className="heading-md mb-4">Download Our Brochure</h3>
-            <p className="body-lg mb-6 opacity-90">
+          <div className="rounded-2xl p-8 text-center"
+            style={{ background: 'linear-gradient(90deg, #b3e0f7 0%, #e6faff 60%, #ffffff 100%)' }}>
+            <h3 className="heading-md mb-4 text-blue-900">Download Our Brochure</h3>
+            <p className="body-lg mb-6 opacity-90 text-blue-800">
               Get detailed information about our services, capabilities, and portfolio in our comprehensive brochure.
             </p>
             <motion.a
               href="/Brochure.pdf"
               download="Genesis_Print_Brochure.pdf"
-              className="inline-flex items-center px-6 py-3 bg-white text-teal-600 rounded-lg font-medium hover:bg-neutral-100 transition-colors"
+              className="inline-flex items-center px-6 py-3 bg-white text-blue-700 rounded-lg font-medium hover:bg-neutral-100 transition-colors"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <Download className="w-5 h-5 mr-2" />
+              <Download className="w-5 h-5 mr-2 text-blue-600" />
               Download Brochure
             </motion.a>
           </div>
