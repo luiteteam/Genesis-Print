@@ -8,8 +8,6 @@ import {
   Package, 
   Layers,
   CheckCircle,
-  Clock,
-  Users,
   Award,
   Zap
 } from 'lucide-react';
@@ -52,9 +50,6 @@ const PostPress = () => {
       features: [
         'Glossy lamination',
         'Matte lamination',
-        'Soft touch lamination',
-        'UV lamination',
-        'Heat seal lamination'
       ]
     },
     {
