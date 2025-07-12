@@ -9,7 +9,8 @@ import {
   CheckCircle,
   Award,
   Users,
-  Clock
+  Clock,
+  Download
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -199,6 +200,32 @@ const ServicesPage = () => {
               <div className="text-3xl font-bold text-neutral-900 mb-2">24/7</div>
               <p className="text-neutral-600">Customer Support</p>
             </div>
+          </div>
+        </motion.div>
+
+        {/* Brochure Section */}
+        <motion.div
+          className="mb-16"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          <div className="bg-gradient-to-r from-primary-600 to-secondary-600 rounded-2xl p-8 text-white text-center">
+            <h3 className="heading-md mb-4">Download Our Brochure</h3>
+            <p className="body-lg mb-6 opacity-90">
+              Get detailed information about our services, capabilities, and portfolio in our comprehensive brochure.
+            </p>
+            <motion.a
+              href="/Brochure.pdf"
+              download="Genesis_Print_Brochure.pdf"
+              className="inline-flex items-center px-6 py-3 bg-white text-primary-600 rounded-lg font-medium hover:bg-neutral-100 transition-colors"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <Download className="w-5 h-5 mr-2" />
+              Download Brochure
+            </motion.a>
           </div>
         </motion.div>
 

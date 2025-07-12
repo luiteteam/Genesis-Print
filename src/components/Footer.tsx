@@ -50,23 +50,33 @@ const Footer = () => {
               viewport={{ once: true }}
             >
               <motion.a
-                href="tel:+918471916297"
+                href="tel:+919864351008"
                 className="flex items-center gap-2 hover:text-white transition-colors duration-200"
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.2 }}
               >
                 <Phone className="w-4 h-4" />
-                8471916297
+                +91 9864351008
               </motion.a>
 
               <motion.a
-                href="mailto:genesispress@gmail.com"
+                href="mailto:genesispnp@gmail.com"
                 className="flex items-center gap-2 hover:text-white transition-colors duration-200"
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.2 }}
               >
                 <Mail className="w-4 h-4" />
-                genesispress@gmail.com
+                genesispnp@gmail.com
+              </motion.a>
+
+              <motion.a
+                href="https://wa.me/918471916297"
+                className="flex items-center gap-2 hover:text-white transition-colors duration-200"
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.2 }}
+              >
+                <Phone className="w-4 h-4" />
+                WhatsApp
               </motion.a>
             </motion.div>
 

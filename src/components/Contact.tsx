@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -125,16 +125,23 @@ const Contact = () => {
     {
       icon: Phone,
       title: 'Phone',
-      content: '8471916297',
-      href: 'tel:+918471916297',
+      content: '+91 9864351008',
+      href: 'tel:+919864351008',
       description: 'Call us for immediate assistance'
     },
     {
       icon: Mail,
       title: 'Email',
-      content: 'genesispress@gmail.com',
-      href: 'mailto:genesispress@gmail.com',
+      content: 'genesispnp@gmail.com',
+      href: 'mailto:genesispnp@gmail.com',
       description: 'Send us your requirements'
+    },
+    {
+      icon: Phone,
+      title: 'WhatsApp',
+      content: '+91 8471916297',
+      href: 'https://wa.me/918471916297',
+      description: 'Message us on WhatsApp'
     },
     {
       icon: MapPin,
