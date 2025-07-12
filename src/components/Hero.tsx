@@ -79,7 +79,7 @@ const Hero = () => {
         <div className="text-center max-w-4xl mx-auto">
           <h1 className="hero-title heading-xl text-white mb-6">
             Where Creativity Meets{' '}
-            <span className="text-gradient">Printing Excellence</span>
+           Printing Excellence
           </h1>
 
           <p className="hero-subtitle body-lg text-white mb-8 max-w-2xl mx-auto">
@@ -120,8 +120,8 @@ const Hero = () => {
                 className="hero-stats text-center min-w-[120px]"
                 whileHover={{ scale: 1.05 }}
               >
-                <div className="flex items-center justify-center w-12 h-12 bg-primary-100 rounded-full mx-auto mb-3">
-                  <stat.icon className="w-6 h-6 text-primary-600" />
+                <div className="flex items-center justify-center w-12 h-12 bg-teal-100 rounded-full mx-auto mb-3">
+                  <stat.icon className="w-6 h-6 text-teal-600" />
                 </div>
                 <div className="text-2xl font-bold text-white">{stat.value}</div>
                 <div className="text-sm text-white/80">{stat.label}</div>
@@ -133,7 +133,7 @@ const Hero = () => {
 
       {/* Floating Elements */}
       <motion.div
-        className="absolute top-1/4 left-10 w-16 h-16 bg-secondary-200 rounded-full opacity-20"
+        className="absolute top-1/4 left-10 w-16 h-16 bg-purple-200 rounded-full opacity-20"
         animate={{ y: [0, -20, 0], rotate: [0, 180, 360] }}
         transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
       />

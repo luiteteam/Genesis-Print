@@ -138,7 +138,7 @@ const Services = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           viewport={{ once: true }}
         >
-          <div className="bg-gradient-to-r from-primary-600 to-secondary-600 rounded-2xl p-8 text-white">
+          <div className="bg-gradient-to-r from-teal-600 to-purple-600 rounded-2xl p-8 text-white">
             <h3 className="heading-md mb-4">
               Download Our Brochure
             </h3>
@@ -148,7 +148,7 @@ const Services = () => {
             <motion.a
               href="/Brochure.pdf"
               download="Genesis_Print_Brochure.pdf"
-              className="inline-flex items-center px-6 py-3 bg-white text-primary-600 rounded-lg font-medium hover:bg-neutral-100 transition-colors"
+              className="inline-flex items-center px-6 py-3 bg-white text-teal-600 rounded-lg font-medium hover:bg-neutral-100 transition-colors"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >

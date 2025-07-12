@@ -115,7 +115,7 @@ const About = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <div className="bg-gradient-to-r from-primary-600 to-secondary-600 rounded-2xl p-8 text-white">
+          <div className="bg-gradient-to-r from-teal-600 to-purple-600 rounded-2xl p-8 text-white">
             <h3 className="heading-md mb-4">Ready to Work With Us?</h3>
             <p className="body-lg mb-6 opacity-90">
               Explore our portfolio and see the quality of our work firsthand.
@@ -123,7 +123,7 @@ const About = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/gallery">
                 <motion.button
-                  className="bg-white text-primary-600 px-6 py-3 rounded-lg font-medium hover:bg-neutral-100 transition-colors"
+                  className="bg-white text-teal-600 px-6 py-3 rounded-lg font-medium hover:bg-neutral-100 transition-colors"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
@@ -132,7 +132,7 @@ const About = () => {
               </Link>
               <Link to="/contact">
                 <motion.button
-                  className="border-2 border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-primary-600 transition-colors"
+                  className="border-2 border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-teal-600 transition-colors"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >

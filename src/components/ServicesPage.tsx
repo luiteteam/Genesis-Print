@@ -145,7 +145,7 @@ const ServicesPage = () => {
 
         {/* Benefits Section */}
         <motion.div
-          className="bg-gradient-to-r from-primary-600 to-secondary-600 rounded-2xl p-8 text-white mb-16"
+          className="bg-gradient-to-r from-teal-600 to-purple-600 rounded-2xl p-8 text-white mb-16"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -155,7 +155,7 @@ const ServicesPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {benefits.map((benefit, index) => (
               <div key={index} className="flex items-center">
-                <Award className="w-5 h-5 mr-3 text-primary-200" />
+                <Award className="w-5 h-5 mr-3 text-teal-200" />
                 <span className="text-white/90">{benefit}</span>
               </div>
             ))}
@@ -187,8 +187,8 @@ const ServicesPage = () => {
               <p className="text-blue-700">Happy Clients</p>
             </div>
             <div className="text-center">
-              <div className="flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M12 8v4l3 3" /><circle cx="12" cy="12" r="10" /></svg>
+              <div className="flex items-center justify-center w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-8 h-8 text-teal-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M12 8v4l3 3" /><circle cx="12" cy="12" r="10" /></svg>
               </div>
               <div className="text-3xl font-bold text-blue-900 mb-2">27+</div>
               <p className="text-blue-700">Years Experience</p>
@@ -204,7 +204,7 @@ const ServicesPage = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <div className="bg-gradient-to-r from-primary-600 to-secondary-600 rounded-2xl p-8 text-white text-center">
+          <div className="bg-gradient-to-r from-teal-600 to-purple-600 rounded-2xl p-8 text-white text-center">
             <h3 className="heading-md mb-4">Download Our Brochure</h3>
             <p className="body-lg mb-6 opacity-90">
               Get detailed information about our services, capabilities, and portfolio in our comprehensive brochure.
@@ -212,7 +212,7 @@ const ServicesPage = () => {
             <motion.a
               href="/Brochure.pdf"
               download="Genesis_Print_Brochure.pdf"
-              className="inline-flex items-center px-6 py-3 bg-white text-primary-600 rounded-lg font-medium hover:bg-neutral-100 transition-colors"
+              className="inline-flex items-center px-6 py-3 bg-white text-teal-600 rounded-lg font-medium hover:bg-neutral-100 transition-colors"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >

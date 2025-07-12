@@ -3,7 +3,7 @@ import { ArrowRight, Phone } from 'lucide-react';
 
 const FinalCTA = () => {
   return (
-    <section className="py-12 md:py-16 lg:py-20 bg-gradient-to-r from-primary-600 to-secondary-600 text-white">
+    <section className="py-12 md:py-16 lg:py-20 bg-gradient-to-r from-teal-600 to-purple-600 text-white">
       <div className="container px-4 sm:px-6">
         <div className="text-center">
           <motion.h2
