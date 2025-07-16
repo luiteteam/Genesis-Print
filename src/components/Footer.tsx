@@ -60,6 +60,16 @@ const Footer = () => {
               </motion.a>
 
               <motion.a
+                href="tel:+918471916297"
+                className="flex items-center gap-2 hover:text-white transition-colors duration-200"
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.2 }}
+              >
+                <Phone className="w-4 h-4" />
+                +91 8471916297
+              </motion.a>
+
+              <motion.a
                 href="mailto:genesispnp@gmail.com"
                 className="flex items-center gap-2 hover:text-white transition-colors duration-200"
                 whileHover={{ scale: 1.05 }}
