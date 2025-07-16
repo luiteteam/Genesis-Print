@@ -79,15 +79,6 @@ const Footer = () => {
                 genesispnp@gmail.com
               </motion.a>
 
-              <motion.a
-                href="https://wa.me/918471916297"
-                className="flex items-center gap-2 hover:text-white transition-colors duration-200"
-                whileHover={{ scale: 1.05 }}
-                transition={{ duration: 0.2 }}
-              >
-                <Phone className="w-4 h-4" />
-                WhatsApp
-              </motion.a>
             </motion.div>
 
             {/* Copyright */}
