@@ -45,96 +45,99 @@ const PostPress = () => {
   const services = [
     {
       icon: Layers,
-      title: 'Lamination',
-      description: 'Professional lamination services to protect and enhance your printed materials.',
-      features: [
-        'Glossy lamination',
-        'Matte lamination',
-      ]
+      title: 'Thermal lamination',
+      description: 'Protect and enhance prints with thermal lamination.',
+      features: ['Glossy', 'Matte']
     },
     {
       icon: Scissors,
-      title: 'Folding & Creasing',
-      description: 'Precise folding and creasing services for brochures, flyers, and complex printed materials.',
-      features: [
-        'Accordion folding',
-        'Gate folding',
-        'Z-fold brochures',
-        'Pre-creasing',
-        'Scoring services'
-      ]
+      title: 'Folding',
+      description: 'Professional folding for all print formats.',
+      features: ['Brochures', 'Flyers', 'Custom folds']
+    },
+    {
+      icon: Scissors,
+      title: 'Creasing',
+      description: 'Accurate creasing for clean folds.',
+      features: ['Pre-creasing', 'Scoring']
+    },
+    {
+      icon: Scissors,
+      title: 'Die cutting',
+      description: 'Custom die cutting for unique shapes.',
+      features: ['Custom shapes', 'Bulk cutting']
+    },
+    {
+      icon: Package,
+      title: 'Pasting',
+      description: 'Strong pasting for packaging and assembly.',
+      features: ['Manual', 'Automated']
     },
     {
       icon: BookOpen,
-      title: 'Stitching',
-      description: 'Professional binding and stitching services for booklets, catalogs, and multi-page documents.',
-      features: [
-        'Saddle stitching',
-        'Side stitching',
-        'Wire binding',
-        'Spiral binding',
-        'Perfect binding'
-      ]
+      title: 'Hard binding',
+      description: 'Durable hard binding for books and manuals.',
+      features: ['Case binding', 'Custom covers']
     },
     {
       icon: Package,
       title: 'Perfect Binding',
-      description: 'High-quality perfect binding for books, catalogs, and thick publications.',
-      features: [
-        'Glue binding',
-        'Hardcover binding',
-        'Softcover binding',
-        'Custom spine width',
-        'Professional finish'
-      ]
+      description: 'Professional perfect binding for thick publications.',
+      features: ['Glue binding', 'Softcover', 'Custom spine']
+    },
+    {
+      icon: Package,
+      title: 'Stacking',
+      description: 'Organized stacking for efficient handling.',
+      features: ['Bulk stacking', 'Quality inspection']
     },
     {
       icon: BookOpen,
-      title: 'Hard Binding',
-      description: 'Premium hard binding services for books, manuals, and special publications.',
-      features: [
-        'Hardcover books',
-        'Case binding',
-        'Custom covers',
-        'Dust jackets',
-        'Library binding'
-      ]
+      title: 'Thread binding',
+      description: 'Thread binding for strength and durability.',
+      features: ['Hand-stitched', 'Custom thread']
     },
     {
-      icon: Scissors,
-      title: 'Cutting',
-      description: 'Precise cutting and trimming services for all types of printed materials.',
-      features: [
-        'Guillotine cutting',
-        'Die cutting',
-        'Kiss cutting',
-        'Custom shapes',
-        'Bulk cutting'
-      ]
+      icon: Package,
+      title: 'Gumming',
+      description: 'Gumming for envelopes and special products.',
+      features: ['Envelope gumming', 'Custom applications']
+    },
+    {
+      icon: Layers,
+      title: 'Mounting',
+      description: 'Mounting for displays and presentations.',
+      features: ['Foam board', 'Custom mounts']
+    },
+    {
+      icon: Layers,
+      title: 'Wiro binding',
+      description: 'Wiro binding for notebooks and calendars.',
+      features: ['Wire loops', 'Custom sizes']
+    },
+    {
+      icon: Layers,
+      title: 'Spiral binding',
+      description: 'Spiral binding for flexible, lay-flat documents.',
+      features: ['Plastic coil', 'Custom sizes']
     },
     {
       icon: Package,
       title: 'Packing',
-      description: 'Professional packing and packaging services to protect your finished products.',
-      features: [
-        'Bubble wrap packing',
-        'Cardboard boxes',
-        'Custom packaging',
-        'Bulk packing',
-        'Shipping preparation'
-      ]
+      description: 'Professional packing for safe delivery.',
+      features: ['Bubble wrap', 'Boxes', 'Custom packaging']
     },
     {
       icon: Package,
-      title: 'Stacking & Forwarding',
-      description: 'Organized stacking and forwarding services for efficient delivery and distribution.',
-      features: [
-        'Organized stacking',
-        'Quality inspection',
-        'Delivery preparation',
-        'Bulk handling',
-        'Logistics support'
-      ]
+      title: 'Forwarding',
+      description: 'Forwarding services for distribution and logistics.',
+      features: ['Bulk forwarding', 'Logistics support']
+    },
+    {
+      icon: Package,
+      title: 'Delivery up to transportation',
+      description: 'Delivery up to transportation for complete service.',
+      features: ['Transport coordination', 'On-time delivery']
     }
   ];
 

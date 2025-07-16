@@ -46,52 +46,22 @@ const Press = () => {
 
   const services = [
     {
-      icon: Printer,
-      title: 'Single Colour Printing',
-      description: 'High-quality single color printing for cost-effective solutions and professional results.',
-      features: [
-        'Black and white printing',
-        'Spot color printing',
-        'High-speed production',
-        'Cost-effective solutions',
-        'Perfect for text-heavy documents'
-      ]
-    },
-    {
-      icon: Palette,
-      title: 'Multi Colour Printing',
-      description: 'Full-color printing with vibrant colors and precise color matching for stunning results.',
-      features: [
-        'CMYK color process',
-        'Pantone color matching',
-        'High-resolution output',
-        'Color consistency',
-        'Professional quality finish'
-      ]
+      icon: Settings,
+      title: 'Offset printing',
+      description: 'Single Colour, Multi colour offset printing for high-volume, quality results.',
+      features: ['Single Colour', 'Multi colour', 'Bulk printing', 'Consistent quality']
     },
     {
       icon: Monitor,
-      title: 'Digital Printing',
-      description: 'Fast, flexible digital printing for short runs and variable data printing needs.',
-      features: [
-        'Short run printing',
-        'Variable data printing',
-        'Quick turnaround',
-        'No setup costs',
-        'Personalized printing'
-      ]
+      title: 'Digital printing',
+      description: 'Single colour and multi colour digital printing for fast, flexible jobs.',
+      features: ['Short runs', 'Variable data', 'Quick turnaround', 'Personalized prints']
     },
     {
-      icon: Settings,
-      title: 'Offset Printing',
-      description: 'Traditional offset printing for large quantities with superior quality and cost efficiency.',
-      features: [
-        'Large quantity printing',
-        'Superior print quality',
-        'Cost-effective for bulk',
-        'Wide range of paper stocks',
-        'Specialty inks and finishes'
-      ]
+      icon: Palette,
+      title: 'Screen printing',
+      description: 'Screen printing for specialty and custom print needs.',
+      features: ['Custom inks', 'Specialty surfaces', 'Vibrant colors']
     }
   ];
 

@@ -46,51 +46,27 @@ const PrePress = () => {
   const services = [
     {
       icon: FileText,
-      title: 'DTP (Desktop Publishing)',
-      description: 'Professional desktop publishing services using industry-standard software like Adobe Creative Suite.',
-      features: [
-        'Adobe InDesign layouts',
-        'Typography and formatting',
-        'Page layout design',
-        'Multi-page document creation',
-        'Cross-platform compatibility'
-      ]
+      title: 'DTP',
+      description: 'Desktop publishing for professional print-ready files.',
+      features: ['Industry-standard software', 'Accurate typesetting', 'Print-ready output']
     },
     {
       icon: Palette,
-      title: 'Graphic Designing',
-      description: 'Creative graphic design services for logos, branding, and visual communication materials.',
-      features: [
-        'Logo design and branding',
-        'Marketing collateral design',
-        'Digital artwork creation',
-        'Color management',
-        'Vector and raster graphics'
-      ]
-    },
-    {
-      icon: Printer,
-      title: 'Plate Making',
-      description: 'Professional plate making for offset printing with precision and quality assurance.',
-      features: [
-        'CTP (Computer-to-Plate) technology',
-        'High-resolution plate output',
-        'Multiple plate sizes',
-        'Quality control checks',
-        'Fast turnaround times'
-      ]
+      title: 'Designing',
+      description: 'Creative design for impactful print materials.',
+      features: ['Logo & branding', 'Marketing collateral', 'Visual communication']
     },
     {
       icon: Settings,
-      title: 'File Preparation',
-      description: 'Comprehensive file preparation and optimization for various printing processes.',
-      features: [
-        'File format conversion',
-        'Color separation',
-        'Resolution optimization',
-        'Print-ready file creation',
-        'Quality assurance checks'
-      ]
+      title: 'Page layout',
+      description: 'Expert page layout for books, brochures, and more.',
+      features: ['Multi-page documents', 'Professional formatting', 'Custom layouts']
+    },
+    {
+      icon: Printer,
+      title: 'Plate making (CTP)',
+      description: 'High-precision CTP plate making for offset printing.',
+      features: ['CTP technology', 'Quality control', 'Fast turnaround']
     }
   ];
 

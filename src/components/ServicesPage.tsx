@@ -47,8 +47,8 @@ const ServicesPage = () => {
     {
       icon: FileText,
       title: 'PRE PRESS',
-      description: 'Complete pre-press services including desktop publishing, design, and plate making for professional printing.',
-      features: ['DTP (Desktop Publishing)', 'Graphic Designing', 'Plate Making', 'File Preparation'],
+      description: 'Expert pre-press services: DTP, designing, page layout, and CTP plate making for flawless print preparation.',
+      features: ['DTP', 'Designing', 'Page layout', 'Plate making (CTP)'],
       price: 'Custom Quote',
       color: 'bg-blue-50 border-blue-200 hover:bg-blue-100',
       link: '/prepress'
@@ -56,8 +56,8 @@ const ServicesPage = () => {
     {
       icon: Package,
       title: 'PRESS',
-      description: 'High-quality printing services with both single color and multi-color printing capabilities.',
-      features: ['Single Colour Printing', 'Multi Colour Printing', 'Digital Printing', 'Offset Printing'],
+      description: 'Professional printing: Offset (single/multi colour), digital (single/multi colour), and screen printing.',
+      features: ['Offset printing: Single Colour, Multi colour', 'Digital printing: Single colour and multi colour', 'Screen printing'],
       price: 'Custom Quote',
       color: 'bg-green-50 border-green-200 hover:bg-green-100',
       link: '/press'
@@ -65,8 +65,10 @@ const ServicesPage = () => {
     {
       icon: Calendar,
       title: 'POST PRESS',
-      description: 'Comprehensive finishing services to complete your printing projects with professional quality.',
-      features: ['Lamination', 'Folding & Creasing', 'Stitching', 'Perfect Binding', 'Hard Binding', 'Cutting', 'Packing', 'Stacking & Forwarding'],
+      description: 'Comprehensive post-press: lamination, folding, binding, die cutting, packing, and delivery.',
+      features: [
+        'Thermal lamination', 'Folding', 'Creasing', 'Die cutting', 'Pasting', 'Hard binding', 'Perfect Binding', 'Stacking', 'Thread binding', 'Gumming', 'Mounting', 'Wiro binding', 'Spiral binding', 'Packing', 'Forwarding', 'Delivery up to transportation'
+      ],
       price: 'Custom Quote',
       color: 'bg-purple-50 border-purple-200 hover:bg-purple-100',
       link: '/postpress'

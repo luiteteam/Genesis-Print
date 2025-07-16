@@ -332,7 +332,9 @@ const Products = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           viewport={{ once: true }}
         >
-          <div className="bg-gradient-to-r from-teal-600 to-purple-600 rounded-xl p-10 text-white max-w-4xl mx-auto">
+          <div className="rounded-xl p-10 text-blue-900 max-w-4xl mx-auto"
+          style={{ background: 'linear-gradient(90deg, #b3e0f7 0%, #e6faff 60%, #ffffff 100%)' }}
+        >
             <h2 className="heading-md mb-5">
               Want to Create Your Own Hard Bound Book?
             </h2>
@@ -341,12 +343,12 @@ const Products = () => {
             </p>
             <motion.a
               href="#contact"
-              className="inline-flex items-center px-8 py-3 bg-white text-teal-600 rounded-lg font-semibold hover:bg-neutral-100 transition-colors shadow"
+              className="inline-flex items-center px-8 py-3 bg-white text-blue-700 border-2 border-blue-300 rounded-lg font-semibold hover:bg-blue-50 transition-colors shadow"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
               Contact Us to Get Started
-              <ArrowRight className="w-5 h-5 ml-2" />
+              <ArrowRight className="w-5 h-5 ml-2 text-blue-500" />
             </motion.a>
           </div>
         </motion.div>
