@@ -125,8 +125,7 @@ const Contact = () => {
     {
       icon: Phone,
       title: 'Phone',
-      content: '+91 9864351008',
-      href: 'tel:+919864351008',
+      content: '+91 9864351008 | +91 8471916297',
       description: 'Call us for immediate assistance'
     },
     {
