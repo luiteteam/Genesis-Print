@@ -33,14 +33,14 @@ const WhyChooseUs = () => {
     {
       icon: Clock,
       title: 'Fast Turnaround',
-      description: 'Quick delivery without compromising on quality.',
+      description: 'Quick delivery without compromising on quality. Timely delivery, on time, every time. We understand the importance of deadlines.',
       color: 'bg-blue-100 text-blue-600'
     },
     {
       icon: Award,
       title: 'Premium Quality',
       description: 'State-of-the-art printing technology ensures crisp, vibrant results every time.',
-      color: 'bg-purple-100 text-purple-600'
+      color: 'bg-blue-50 text-blue-700'
     },
     {
       icon: Headphones,
@@ -50,21 +50,21 @@ const WhyChooseUs = () => {
     },
     {
       icon: Truck,
-      title: 'Quick Turnaround',
-      description: 'Timely delivery, on time, every time. We understand the importance of deadlines.',
-      color: 'bg-orange-100 text-orange-600'
+      title: 'Personalized Service',
+      description: 'Dedicated support and tailored solutions for every client, ensuring your needs are met from start to finish.',
+      color: 'bg-blue-50 text-blue-700'
     },
     {
       icon: Shield,
       title: 'Quality Guarantee',
       description: 'Not satisfied with your order? We offer a 100% satisfaction guarantee.',
-      color: 'bg-red-100 text-red-600'
+      color: 'bg-blue-200 text-blue-800'
     },
     {
       icon: Zap,
       title: 'Competitive Pricing',
       description: 'Best prices in the market without hidden fees. Get more value for your money.',
-      color: 'bg-yellow-100 text-yellow-600'
+      color: 'bg-blue-50 text-blue-700'
     },
   ];
 
