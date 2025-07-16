@@ -93,8 +93,7 @@ const Gallery = () => {
       '/images/VID-20250712-WA0002.mp4',
       '/images/VID-20250712-WA0001.mp4',
       '/images/VID-20250711-WA0004.mp4',
-      '/images/VID-20250711-WA0003.mp4',
-      '/images/VID-20250711-WA0002.mp4'
+      '/images/VID-20250711-WA0003.mp4'
     ]
   };
 
