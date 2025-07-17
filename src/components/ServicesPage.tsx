@@ -6,10 +6,7 @@ import {
   FileText, 
   Package, 
   Calendar,
-  CheckCircle,
   Award,
-  Users,
-  Clock,
   Download
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
