@@ -2,14 +2,11 @@ import { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { 
-  Printer, 
+import {  
   Palette, 
   Monitor, 
   Settings,
   CheckCircle,
-  Clock,
-  Users,
   Award,
   Zap
 } from 'lucide-react';
@@ -75,11 +72,8 @@ const Press = () => {
   ];
 
   const capabilities = [
-    'Paper sizes up to A0',
     'Various paper weights and finishes',
-    'Specialty inks and coatings',
-    'Variable data printing',
-    'Bleed and crop marks',
+    'Specialty inks',
     'Quality control checks'
   ];
 
