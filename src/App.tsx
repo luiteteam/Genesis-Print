@@ -15,6 +15,7 @@ import { HelmetProvider } from 'react-helmet-async';
 import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import BrandLoader from './components/BrandLoader';
+import WhatsAppFloat from './components/WhatsAppFloat';
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
             <Route path="/press" element={<Press />} />
             <Route path="/postpress" element={<PostPress />} />
           </Routes>
+          <WhatsAppFloat />
           <Footer />
         </div>
       </Router>
